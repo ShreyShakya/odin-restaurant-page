@@ -2,6 +2,9 @@
 
 // loadHome()
 
-import { loadMenu } from "./pages/menu.js";
+// import { loadMenu } from "./pages/menu.js";
 
-loadMenu()
+// loadMenu()
+
+import { loadContact } from "./pages/contact.js";
+loadContact()
