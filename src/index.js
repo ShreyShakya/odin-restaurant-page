@@ -1,3 +1,7 @@
-import { loadHome } from "./pages/home.js";
+// import { loadHome } from "./pages/home.js";
 
-loadHome()
+// loadHome()
+
+import { loadMenu } from "./pages/menu.js";
+
+loadMenu()
