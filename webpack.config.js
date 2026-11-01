@@ -11,6 +11,15 @@ module.exports = {
         clean: true,
     },
 
+    module: {
+        rules: [
+            {
+                test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
+                type: "asset/resource",
+            },
+        ],
+    },
+
     plugins: [
         new HtmlWebpackPlugin({
             template: "./src/template.html",
