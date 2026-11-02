@@ -7,6 +7,8 @@ export function loadContact() {
     };
 
     const content = document.querySelector('#content')
+    const contactTitle = document.createElement('h1')
+    contactTitle.textContent = "Contact Us"
     const address = document.createElement('p')
     const phone = document.createElement('p')
     const email = document.createElement('p')
@@ -17,6 +19,6 @@ export function loadContact() {
     email.textContent = contact.email
     hours.textContent = contact.hours
 
-    content.append(address, phone, email, hours)
+    content.append(contactTitle, address, phone, email, hours)
 
 }

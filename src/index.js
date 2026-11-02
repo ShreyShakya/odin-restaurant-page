@@ -1,6 +1,11 @@
 import { loadHome } from "./pages/home.js";
 import { loadMenu } from "./pages/menu.js";
 import { loadContact } from "./pages/contact.js";
+import "./style.css";
+
+import logo from "./images/logo.svg";
+const logoImage = document.querySelector(".logo");
+logoImage.src = logo;
 
 const content = document.querySelector("#content");
 const homeButton = document.querySelector('.homeButton')

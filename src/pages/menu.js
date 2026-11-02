@@ -1,6 +1,8 @@
 export function loadMenu() {
     const content = document.querySelector('#content')
     const menuTitle = document.createElement('h1')
+    const menuGrid = document.createElement('div')
+    menuGrid.classList.add('menu-grid')
     menuTitle.textContent = "Our Menu"
     content.append(menuTitle)
 
@@ -28,6 +30,7 @@ export function loadMenu() {
     ]
 
     menu.forEach(item => {
+        const menuCard = document.createElement('div')
         const menuName = document.createElement('p')
         const menuDescription = document.createElement('p')
         const menuPrice = document.createElement('p')
@@ -36,6 +39,8 @@ export function loadMenu() {
         menuDescription.textContent = item.description
         menuPrice.textContent = `$${item.price}`
 
-        content.append(menuName, menuDescription, menuPrice)
+        menuCard.append(menuName, menuDescription, menuPrice)
+        menuGrid.append(menuCard)
+        content.append(menuGrid)
     })
 }
